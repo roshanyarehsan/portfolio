@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehsan Roshanyar Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f1f1f, #333333);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.3em;
+            color: #cccccc;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px 25px;
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.7);
+        }
+
+        section h2 {
+            color: #ff9800;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ff9800;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background-color: #2a2a2a;
+            margin: 10px 0;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .skills li:hover {
+            background-color: #3c3c3c;
+        }
+
+        .contact a {
+            color: #ff9800;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: #e68a00;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: #cccccc;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2em; }
+            header p { font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ehsan Roshanyar</h1>
+        <p>Schüler & angehender Softwareentwickler</p>
+    </header>
+
+    <section class="about">
+        <h2>Über mich</h2>
+        <h3>Ehsan Roshanyar</h3>
+        <p>Ich bin 18 Jahre alt und komme aus Vreden. Ich lebe seit drei Jahren und sechs Monaten in Deutschland und besuche die Berufsschule BTA Technik in Ahaus. Momentan mache ich meinen Hauptschuleabschluss in der 10. Klasse. In meiner Freizeit boxe ich und gehe gerne spazieren. Mein Ziel ist es, ein Softwareentwickler zu werden.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Fähigkeiten</h2>
+        <ul>
+            <li>HTML & CSS – Gut</li>
+            <li>Java – Grundkenntnisse (im Lernen)</li>
+            <li>GitHub – Gut</li>
+            <li>Microsoft Office – Gut</li>
+            <li>Deutsch – B2</li>
+            <li>Englisch – Sehr gut (Schulnote 1+)</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <p>Telefon: 0157 507 269 39</p>
+        <p>Email: <a href="mailto:roshanyarehsan@gmail.com">roshanyarehsan@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/roshanyarehsan" target="_blank">Mein GitHub Profil</a></p>
+    </section>
+
+    <footer>
+        <p>Diese Webseite wurde am <span id="date"></span> erstellt.</p>
+    </footer>
+
+    <script>
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        document.getElementById('date').textContent = formattedDate;
+    </script>
+
+</body>
+</html>
