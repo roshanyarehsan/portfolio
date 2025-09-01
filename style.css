@@ -1,0 +1,76 @@
+/* Grund-Design */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #aaa;
+}
+
+/* Sektionen */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Überschriften */
+h2 {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 5px;
+}
+
+/* Skills-Liste */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #2a2a2a;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Links */
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1f1f1f;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+}
